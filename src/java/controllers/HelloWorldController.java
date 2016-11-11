@@ -32,6 +32,14 @@ public class HelloWorldController {
         interestList.add("Reading");
         interestList.add("Programming");
         model.put("interestList", interestList);
+       
+        List<String> position = new ArrayList();
+        position.add("CEO");
+        position.add("Java Developer");
+        position.add("Professor");
+        model.put("position", position);
+        
+                
         
         return "index";
     }

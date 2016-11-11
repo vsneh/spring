@@ -23,18 +23,19 @@
                 <tr>
                     <td>Name: </td>
                     <!--  This path attribute binds the input field to the form-backing object's property. -->
-                    <td><form:input path="clientName" /></td>
+                    <td><form:input path="clientName" items="${clientName}"/></td>
                 </tr>
                 <tr>
                     <td>Gender: </td>
                     <td>  
-                        <form:radiobutton path="gender" value="Female"/>Female
-                        <form:radiobutton path="gender" value="Male"/>Male
+                        <form:radiobutton path="gender" value="Female" items="${gender}"/>Female
+                        <form:radiobutton path="gender" value="Male" items="${gender}"/>Male
                     </td>
                 </tr>
                 <tr>
-                    <td>Position: </td>
-                   
+                    <td>Position : </td>
+                    <!--  This path attribute binds the input field to the form-backing object's property. -->
+                    <td><form:select path="position" items="${position}"/></td>
                 </tr>
                <tr>
                     <td>Industries: </td>
@@ -46,7 +47,7 @@
                 </tr>
                  <tr>
                     <td>Comment: </td>
-                    <td><form:textarea path="comment" rows="10" cols="30"/></td> 
+                    <td><form:textarea path="comment" rows="10" cols="30" items="${comment}"/></td> 
                 </tr>
                 <tr>
                     <td colspan="2" align="center"><input type="submit" value="Submit" /></td>
